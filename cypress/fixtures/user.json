@@ -1,0 +1,21 @@
+{
+    "failed_login" : [
+        {
+            "username" : "wrong user",
+            "password" : "wrong password"
+        },
+        {
+            "username" : "John Doe",
+            "password" : "wrong password"
+        },
+        {
+            "username" : "wrong user",
+            "password" : "ThisIsNotAPassword"
+        },
+        {
+            "username" : "x",
+            "password" : "x"
+        }
+
+    ]
+}
