@@ -2,3 +2,13 @@
 - login failed username and password is empty
 - login failed username is wrong
 - login failed password is wrong
+- book appoitment success select Tokyo CURA Healthcare Center
+- book appoitment success select Hongkong CURA Healthcare Center
+- book appoitment success select Seoul CURA Healthcare Center
+- book appoitment success select yes to Apply for hospital readmission
+- book appoitment success select no to Apply for hospital readmission
+- book appoitment success select Healthcare Program Medicare 
+- book appoitment success select Healthcare Program Medicaid 
+- book appoitment success select Healthcare Program None
+- book appoitment failed mandatory visit date is empty
+- book appoitment failed
