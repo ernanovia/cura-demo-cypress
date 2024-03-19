@@ -9,7 +9,7 @@ describe('login testcase', () => {
     cy.visit('')
   })
 
-  it.skip('multiple login failed', () => {
+  it('multiple login failed', () => {
     cy.fixture('user.json').then((user) => {
       user.failed_login.forEach((datauser) => {
         cy.login(datauser.username, datauser.password)
@@ -57,6 +57,16 @@ describe('login testcase', () => {
     cy.get('#btn-book-appointment').click()
     cy.contains('Go to Homepage').click()
     cy.contains('Make Appointment')
+  })
+
+  it('multiple book appoitment success', () => {
+    cy.login('John Doe', 'ThisIsNotAPassword')
+    cy.fixture('user.json').then((user) => {
+      user.sucess_booking.forEach((datauser) => {
+        cy.bookappoinment(datauser.facility, datauser.healthcareProgram, datauser.comment)
+        cy.contains('Make Appointment')
+      })
+    })
   })
   
 })
