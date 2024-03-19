@@ -17,5 +17,32 @@
             "password" : "x"
         }
 
+    ],
+    "sucess_booking" : [
+        {
+            "facility" : "Tokyo CURA Healthcare Center",
+            "healthcareProgram" : "Medicare",
+            "comment" : "this is comment for Tokyo CURA Healthcare Center and Medicare"
+        },
+        {
+
+            "facility" : "Hongkong CURA Healthcare Center",
+            "healthcareProgram" : "Medicaid",
+            "comment" : "this is comment for THongkong CURA Healthcare Center and Medicaid "
+        },
+        {
+
+            "facility" : "Seoul CURA Healthcare Center",
+            "healthcareProgram" : "None",
+            "comment" : "this is comment for Seoul CURA Healthcare Center and None "
+        },
+        {
+
+            "facility" : "Seoul CURA Healthcare Center",
+            "healthcareProgram" : "None",
+            "comment" : " "
+        }
+
+        
     ]
 }
