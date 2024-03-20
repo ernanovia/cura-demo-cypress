@@ -69,5 +69,18 @@ describe('login testcase', () => {
     })
   })
   
+  it('book appoinment failed because visit date is empty', () => {
+    cy.login('John Doe', 'ThisIsNotAPassword')
+    appoinmentPage.inputFacility('Tokyo CURA Healthcare Center')
+    appoinmentPage.inputHealthProgram('Medicare')
+    appoinmentPage.inputVisitDate(' ')
+    cy.contains('Comment').click()
+    appoinmentPage.inputComment('this is comment for Tokyo CURA Healthcare Center and Medicare')
+    appoinmentPage.clikBookBtn()
+    cy.get('#txt_visit_date:invalid')
+      .invoke('prop','validationMessage')
+      .should('equal', 'Please fill out this field.')
+  })
+  
 })
 

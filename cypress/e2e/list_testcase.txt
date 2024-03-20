@@ -11,4 +11,4 @@
 - book appoitment success select Healthcare Program Medicaid 
 - book appoitment success select Healthcare Program None
 - book appoitment failed mandatory visit date is empty
-- book appoitment failed
+- book appoitment failed 
