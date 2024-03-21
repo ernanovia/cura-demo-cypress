@@ -44,5 +44,8 @@ Cypress.Commands.add('bookappoinment', (facility, healthcareProgram, comment) =>
     cy.contains('Comment').click()
     appoinmentPage.inputComment(comment)
     appoinmentPage.clikBookBtn()
-    appoinmentPage.clickGotohomeBtn()
+})
+
+Cypress.Commands.add('verifyData', (value) => {
+    cy.contains(value)
 })

@@ -43,6 +43,7 @@ class AppoinmentPage {
         cy.url().should('include', urlDasboard)
     }
 
+
 }
 
 export default new AppoinmentPage()

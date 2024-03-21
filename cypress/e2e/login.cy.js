@@ -59,11 +59,16 @@ describe('login testcase', () => {
     cy.contains('Make Appointment')
   })
 
-  it('multiple book appoitment success', () => {
+  it.only('multiple book appoitment success', () => {
     cy.login('John Doe', 'ThisIsNotAPassword')
     cy.fixture('user.json').then((user) => {
       user.sucess_booking.forEach((datauser) => {
         cy.bookappoinment(datauser.facility, datauser.healthcareProgram, datauser.comment)
+        cy.contains(datauser.facility)
+        cy.contains(datauser.healthcareProgram)
+        cy.contains(datauser.comment)
+        cy.contains(daysjs().format('DD/MM/YYYY'))
+        appoinmentPage.clickGotohomeBtn()
         cy.contains('Make Appointment')
       })
     })
