@@ -36,11 +36,12 @@ Cypress.Commands.add('login', (username, password) => {
     cy.get('#btn-login').click()
 })
 
-Cypress.Commands.add('bookappoinment', (facility, healthcareProgram, comment) => {
+Cypress.Commands.add('bookappoinment', (facility, healthcareProgram, comment, today) => {
     appoinmentPage.inputFacility(facility)
     appoinmentPage.inputReadmission()
     appoinmentPage.inputHealthProgram(healthcareProgram)
     appoinmentPage.inputVisitDate(daysjs().format('DD/MM/YYYY'))
+    // appoinmentPage.inputVisitDate(today)
     cy.contains('Comment').click()
     appoinmentPage.inputComment(comment)
     appoinmentPage.clikBookBtn()

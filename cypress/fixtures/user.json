@@ -22,6 +22,7 @@
         {
             "facility" : "Tokyo CURA Healthcare Center",
             "healthcareProgram" : "Medicare",
+            "visitDate" : "@{currentdate}",
             "comment" : "this is comment for Tokyo CURA Healthcare Center and Medicare"
         },
         {
